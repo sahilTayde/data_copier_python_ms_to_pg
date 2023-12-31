@@ -24,3 +24,4 @@ EXPOSE 3306
 #show databases;
 #show tables;
 #SOURCE /retail_db/create_db.sql
+#ocker exec -it mysql_retail mysql -u retail_user -p -D retail
