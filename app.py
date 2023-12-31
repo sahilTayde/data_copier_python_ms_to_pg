@@ -3,6 +3,7 @@ import os
 from config import *
 from util import *
 import pandas as pd
+from read import *
 
 def main():
     """ Program takes atleast one argument"""
@@ -11,8 +12,10 @@ def main():
        db_details = DB_DETAILS[env] 
     table_to_load=get_tables("table_list.config")
     for i in table_to_load['table_name'] :
-        table_name = i;
-    print(table_name)
+        data,column_names = read_table(db_details,i,10)
+        for rec in data :
+            print(rec)
+    
 
     
    

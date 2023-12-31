@@ -5,17 +5,20 @@ DB_DETAILS={
     'dev': {
         'SOURCE_DB_DETAILS' :{
                  'DB_TYPE': 'mysql',
-                 'DB_HOST': '172.17.0.2',
-                 'DB_NAME': 'retail_db',
+                 'DB_HOST': 'localhost',
+                 'DB_NAME': 'retail',
                  'DB_USER': os.environ.get('SOURCE_DB_USER'),
-                 'DB_PASS': os.environ.get('SOURCE_DB_PASS')
+                 'DB_PASS': os.environ.get('SOURCE_DB_PASS'),
+                 'DB_PORT': '3306'
         },
         'TARGET_DB_DETAILS' :{
             'DB_TYPE': 'postgres',
-            'DB_HOST': '139.99.209.131',
+            'DB_HOST': 'localhost',
             'DB_NAME': 'retail_db',
             'DB_USER': os.environ.get('TARGET_DB_USER'),
-            'DB_PASS': os.environ.get('TARGET_DB_PASS')
+            'DB_PASS': os.environ.get('TARGET_DB_PASS'),
+            'DB_PORT': '5534'
         }
     }
 }
+
