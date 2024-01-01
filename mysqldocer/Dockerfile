@@ -27,3 +27,4 @@ EXPOSE 3306
 #show tables;
 #SOURCE /retail_db/create_db.sql
 #ocker exec -it mysql_retail mysql -u retail_user -p -D retail
+#docker container cp /Users/sahiltayde/appdata/mywork/itversity/mysql_retail_db/retail_mysql_db my-postgres-container:/
