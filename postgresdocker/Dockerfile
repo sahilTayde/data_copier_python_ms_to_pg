@@ -12,6 +12,7 @@ EXPOSE 5432
 #CREATE DATABASE
 # CREATE USER retail_user WITH ENCRYPTED PASSWORD 'sahil';
 # GRANT ALL ON DATABASE retail_db TO retail_user;
+#GRANT ALL PRIVILEGES ON DATABASE postgres TO postgres;
 # \l
 # /q
 # psql -U postgres
